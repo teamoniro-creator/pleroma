@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleroma - Ripple Gradient Animation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      height: 100vh;
+      background: radial-gradient(circle, #6a0dad, #1e90ff);
+      background-size: 200% 200%;
+      animation: rippleEffect 10s infinite alternate ease-in-out;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+      will-change: transform;
+    }
+    h1 {
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #6a0dad;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .learn-more { background-color: #3b82f6; }
+    .join-us { background-color: #d844ef; }
+    button:hover { opacity: 0.9; }
+
+    @keyframes rippleEffect {
+      0% { background-position: 50% 50%; }
+      50% { background-position: 0% 100%; }
+      100% { background-position: 50% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="PleromaLogo.png" style="max-width: 200px" />
+    </h1>
+    <p>LEGACY OF LIGHT</p>
+    <button class="learn-more">Learn More</button>
+    <button class="join-us">Join Us</button>
+  </div>
+</body>
+</html>

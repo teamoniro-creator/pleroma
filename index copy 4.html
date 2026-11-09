@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleroma</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      height: 100vh;
+      background: radial-gradient(circle, #0b132b, #1c2541);
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #d1d5db;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .learn-more { background-color: #3b82f6; }
+    .join-us { background-color: #ef4444; }
+    button:hover { opacity: 0.9; }
+
+    .background-animation {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .sphere {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+      animation: float 10s infinite ease-in-out;
+      opacity: 0.5;
+      filter: blur(15px);
+    }
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-500px) translateX(200px); }
+      100% { transform: translateY(0) translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-animation">
+    <script>
+      for (let i = 0; i < 20; i++) {
+        const sphere = document.createElement('div');
+        sphere.classList.add('sphere');
+        const size = Math.random() * 200 + 100;
+        sphere.style.width = `${size}px`;
+        sphere.style.height = `${size}px`;
+        sphere.style.top = `${Math.random() * 100}%`;
+        sphere.style.left = `${Math.random() * 100}%`;
+        sphere.style.animationDuration = `${Math.random() * 5 + 5}s`;
+        sphere.style.animationDelay = `${Math.random() * 5}s`;
+        document.body.appendChild(sphere);
+      }
+    </script>
+  </div>
+
+  <div class="container">
+    <h1>Pleroma</h1>
+    <p>Embracing the fullness of Christ's love, where unity and grace abound.</p>
+    <button class="learn-more">Learn More</button>
+    <button class="join-us">Join Us</button>
+  </div>
+</body>
+</html>
