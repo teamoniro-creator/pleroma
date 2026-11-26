@@ -1,0 +1,1271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manaveeyam Christmas Cultural Collective 2026</title>
+    <meta name="description" content="Join Manaveeyam Christmas Cultural Collective 2026 from December 21 to 24 at Manaveeyam Veedhi, Thiruvananthapuram. Four evenings of Christmas celebration, music, dance and culture.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --purple-dark: #250437;
+            --purple: #51055C;
+            --purple-light: #820783;
+            --pink: #D844A6;
+            --gold: #F4D58D;
+            --white: #FFFFFF;
+            --muted: #E5D6ED;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background: var(--purple-dark);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* NAVIGATION */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 12px 5%;
+            background: rgba(243, 221, 255, 0.92);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav-inner {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo img {
+            width: 145px;
+            max-height: 55px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: rgb(25, 2, 35);
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--pink);
+        }
+
+        .nav-links .nav-register {
+            background: var(--gold);
+            color: var(--purple-dark);
+            padding: 11px 20px;
+            border-radius: 6px;
+        }
+
+        .nav-links .nav-register:hover {
+            background: rgb(250, 255, 198);
+            color: var(--purple-dark);
+        }
+
+        /* COMMON */
+
+        .section {
+            padding: 100px 7%;
+            position: relative;
+        }
+
+        .section-inner {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .section-label {
+            color: var(--gold);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.9;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* HERO */
+
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 20px 90px;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(30, 2, 48, 0.94),
+                    rgba(81, 5, 92, 0.78),
+                    rgba(37, 4, 55, 0.90)
+                ),
+                url('/Images/intro.jpg');
+
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        #home::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(216, 68, 166, 0.20),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 85% 75%,
+                    rgba(244, 213, 141, 0.13),
+                    transparent 30%
+                );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+        }
+
+        .hero-logo {
+            width: 230px;
+            max-width: 65%;
+            margin-bottom: 35px;
+        }
+            .hero-eyebrow1 {
+            color: var(--white);
+            letter-spacing: 0px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        .hero-eyebrow {
+            color: var(--gold);
+            letter-spacing: 5px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 9vw, 7rem);
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: 2px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .hero-title span {
+            display: block;
+            color: #E9BDF5;
+            font-size: 0.38em;
+            letter-spacing: 4px;
+            margin-top: 22px;
+        }
+
+        .hero-year {
+            display: block;
+            color: var(--gold);
+            font-size: 0.4em;
+            letter-spacing: 12px;
+            margin-top: 20px;
+        }
+
+        .hero-subtitle {
+            max-width: 720px;
+            margin: 30px auto;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #F2E5F7;
+            text-align: center;
+        }
+
+        .hero-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .hero-info-item {
+            padding: 13px 20px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .hero-info-item span {
+            color: var(--gold);
+        }
+
+   .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.hero-buttons a {
+    min-width: 210px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons a {
+        width: 90%;
+        max-width: 320px;
+        min-width: unset;
+    }
+}
+        .btn-primary-custom,
+        .btn-outline-custom {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 7px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-primary-custom {
+            background: var(--gold);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary-custom:hover {
+            background: white;
+            color: var(--purple-dark);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline-custom {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--purple-dark);
+        }
+
+        /* EVENT STRIP */
+
+        .event-strip {
+            background: linear-gradient(90deg, #7B168A, #B52A91, #7B168A);
+            padding: 22px 15px;
+            text-align: center;
+        }
+
+        .event-strip p {
+            margin: 0;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 0.95rem;
+        }
+
+        /* ABOUT */
+
+        #about {
+            background: #f8eaff;
+            color: var(--purple-dark);
+            text-align: center;
+        }
+
+        #about .section-title {
+            color: var(--purple);
+        }
+
+        #about .section-label {
+            color: var(--pink);
+        }
+
+        #about .section-description {
+            color: #55415E;
+        }
+
+        .about-highlight {
+            color: #982D9D;
+            font-weight: 800;
+        }
+
+        .about-divider {
+            width: 70px;
+            height: 4px;
+            background: var(--pink);
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* PROGRAMME */
+
+        #programme {
+            background: linear-gradient(
+                135deg,
+                #31064F,
+                #51055C,
+                #31064F
+            );
+            text-align: center;
+        }
+
+        .programme-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 55px;
+        }
+
+        .programme-card {
+            padding: 35px 15px;
+            border: 1px solid rgba(255,255,255,0.17);
+            border-radius: 14px;
+            background: rgba(255,255,255,0.06);
+            transition: 0.3s;
+        }
+
+        .programme-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-7px);
+        }
+
+        .programme-icon {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .programme-card h3 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .programme-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .programme-note {
+            margin-top: 40px;
+            color: #E9BDF5;
+            font-size: 1rem;
+        }
+
+        /* COMPETITIONS */
+
+        #competitions {
+            background: #F9F3FC;
+            color: var(--purple-dark);
+            text-align: center;
+        }
+
+        #competitions .section-title {
+            color: var(--purple);
+        }
+
+        #competitions .section-label {
+            color: var(--pink);
+        }
+
+        #competitions .section-description {
+            color: #55415E;
+        }
+
+        .competition-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .competition-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(57, 8, 75, 0.10);
+            border: 1px solid #EADCEE;
+            transition: 0.3s;
+        }
+
+        .competition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(57, 8, 75, 0.16);
+        }
+
+        .competition-card-top {
+            padding: 35px 30px;
+            background: linear-gradient(
+                135deg,
+                #51055C,
+                #922B9B
+            );
+            color: white;
+        }
+
+        .competition-card-top.nativity {
+            background: linear-gradient(
+                135deg,
+                #3A1263,
+                #7A299C
+            );
+        }
+
+        .competition-symbol {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .competition-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .competition-card-top p {
+            color: #F1DDF7;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .competition-card-body {
+            padding: 25px 30px;
+        }
+
+        .competition-card-body p {
+            color: #55415E;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .competition-age {
+            display: inline-block;
+            background: #F3E5F7;
+            color: #70217C;
+            padding: 9px 14px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 800;
+        }
+
+        .competition-register {
+            margin-top: 35px;
+        }
+
+        /* CONTACT */
+
+        #contact {
+            background: #250437;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 850px;
+            margin: 45px auto 0;
+        }
+
+        .contact-card {
+            padding: 22px;
+            border: 1px solid rgba(255,255,255,0.13);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .contact-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            color: var(--gold);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .contact-card a:hover {
+            color: white;
+        }
+
+        .contact-location {
+            margin-top: 40px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background: #180225;
+            padding: 25px 15px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer p {
+            color: #CDB8D6;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        .footer strong {
+            color: var(--gold);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .programme-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            html {
+                scroll-padding-top: 75px;
+            }
+
+            .navbar {
+                padding: 10px 15px;
+            }
+
+            .nav-inner {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .nav-logo img {
+                width: 110px;
+                max-height: 35px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .nav-links a {
+                font-size: 0.72rem;
+            }
+
+            .nav-links .nav-register {
+                padding: 7px 12px;
+            }
+
+            #home {
+                min-height: 100vh;
+                padding: 155px 18px 65px;
+                background-attachment: scroll;
+            }
+
+            .hero-logo {
+                width: 170px;
+                margin-bottom: 25px;
+            }
+
+            .hero-eyebrow {
+                font-size: 0.72rem;
+                letter-spacing: 3px;
+            }
+
+            .hero-title {
+                font-size: clamp(2.8rem, 12vw, 4.5rem);
+            }
+
+            .hero-title span {
+                font-size: 0.39em;
+                letter-spacing: 1px;
+                margin-top: 15px;
+            }
+
+            .hero-title .hero-year {
+                font-size: 0.35em;
+            }
+
+            .hero-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .hero-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-info-item {
+                width: 100%;
+                max-width: 330px;
+                font-size: 0.8rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons a {
+                width: 90%;
+                max-width: 320px;
+            }
+
+            .section {
+                padding: 75px 20px;
+            }
+
+            .section-title {
+                font-size: 2.1rem;
+            }
+
+            .section-description {
+                font-size: 0.95rem;
+            }
+
+            .programme-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                margin-top: 35px;
+            }
+
+            .programme-card {
+                padding: 25px 10px;
+            }
+
+            .programme-icon {
+                font-size: 2.1rem;
+            }
+
+            .programme-card h3 {
+                font-size: 1rem;
+            }
+
+            .programme-card p {
+                font-size: 0.78rem;
+            }
+
+            .competition-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .competition-card-top {
+                padding: 28px 22px;
+            }
+
+            .competition-card-body {
+                padding: 22px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .event-strip p {
+                font-size: 0.75rem;
+                letter-spacing: 1px;
+                line-height: 1.8;
+            }
+
+        }
+
+        @media (max-width: 380px) {
+
+            .nav-links {
+                gap: 9px;
+            }
+
+            .nav-links a {
+                font-size: 0.65rem;
+                padding: 7px 5px;
+            }
+
+            .programme-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#home" class="nav-logo">
+                <img src="Images/PleromaLogo.png" alt="Pleroma - The Legacy of Light">
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#programme">Programme</a>
+                <a href="#competitions">Competitions</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-eyebrow1" style="text-align: center;">
+                 <img src="Images/PleromaLogo.png" alt="Pleroma - The Legacy of Light" style="width: 100px;">
+            <div  >
+                Pleroma presents
+            </div>
+            </div>
+            <div class="hero-eyebrow">
+                MANAVEEYAM VEEDHI 
+            </div>
+
+            <h1 class="hero-title">
+
+                CHRISTMAS
+
+                <span>CULTURAL COLLECTIVE</span>
+
+                <small class="hero-year">2026</small>
+
+            </h1>
+
+            <p class="hero-subtitle">
+                Four evenings filled with music, dance, drama
+                and the joy of celebrating Christmas together.
+            </p>
+
+            <div class="hero-info">
+
+                <div class="hero-info-item">
+                    <span>21 – 24</span> DECEMBER 2026
+                </div>
+
+                <div class="hero-info-item">
+                    <span>6:30 PM – 9:30 PM</span>
+                </div>
+
+                <div class="hero-info-item">
+                    <span>MANAVEEYAM VEEDHI</span> · TRIVANDRUM
+                </div>
+
+            </div>
+
+<div class="hero-buttons">
+
+    <a href="#programme" class="btn-primary-custom">
+        EXPLORE THE PROGRAMME ↓
+    </a>
+
+    <a href="#competitions" class="btn-outline-custom">
+        VIEW COMPETITIONS
+    </a>
+
+    <a href="https://forms.gle/uR71Umjrd9oyrWHx6"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn-outline-custom">
+        REGISTER FOR COMPETITIONS ↗
+    </a>
+
+</div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- EVENT HIGHLIGHT -->
+
+    <div class="event-strip">
+
+        <p>
+            CAROLS &nbsp; | &nbsp;
+            DANCE &nbsp; | &nbsp;
+            SKITS &nbsp; | &nbsp;
+            LIVE BAND &nbsp; | &nbsp;
+            CHRISTMAS CELEBRATIONS
+        </p>
+
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="section">
+
+        <div class="section-inner">
+
+            <div class="section-label">
+                THE SPIRIT OF CHRISTMAS
+            </div>
+
+            <h2 class="section-title">
+                Christmas brings us together.
+            </h2>
+
+            <div class="about-divider"></div>
+
+            <p class="section-description">
+
+                Christmas is a celebration of love, hope,
+                peace and togetherness.
+
+                <br><br>
+
+                The <span class="about-highlight">
+                Manaveeyam Christmas Cultural Collective 2026
+                </span> brings the festive spirit alive at
+                Manaveeyam Veedhi, Thiruvananthapuram.
+
+                <br><br>
+
+                Join us for four evenings of cultural
+                performances, music, dance, drama and artistic
+                expressions celebrating the joy of Christmas.
+
+                <br><br>
+
+                Come together with friends, family and the
+                community to celebrate the season!
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRAMME SECTION -->
+
+    <section id="programme" class="section">
+
+        <div class="section-inner">
+
+            <div class="section-label">
+                FOUR EVENINGS OF CELEBRATION
+            </div>
+
+            <h2 class="section-title">
+                Experience the Festive Spirit
+            </h2>
+
+            <p class="section-description">
+                Music, movement, creativity and performances
+                come together to celebrate Christmas at Manaveeyam.
+            </p>
+
+
+            <div class="programme-grid">
+
+                <div class="programme-card">
+ 
+
+                    <h3>Christmas Carols</h3>
+
+                    <p>
+                        Celebrate the season with the joy
+                        and harmony of Christmas songs.
+                    </p>
+
+                </div>
+
+
+                <div class="programme-card">
+ 
+
+                    <h3>Dance</h3>
+
+                    <p>
+                        Colourful performances and
+                        energetic festive expressions.
+                    </p>
+
+                </div>
+
+
+                <div class="programme-card">
+ 
+
+                    <h3>Skits & Drama</h3>
+
+                    <p>
+                        Stories and creative performances
+                        celebrating the spirit of Christmas.
+                    </p>
+
+                </div>
+
+
+                <div class="programme-card">
+ 
+
+                    <h3>Live Band</h3>
+
+                    <p>
+                        Music and live performances
+                        to make the evenings memorable.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p class="programme-note">
+                And many more creative expressions of Christmas!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPETITIONS SECTION -->
+
+    <section id="competitions" class="section">
+
+        <div class="section-inner">
+
+            <div class="section-label">
+                CREATIVITY & PARTICIPATION
+            </div>
+
+            <h2 class="section-title">
+                Christmas Competitions 2026
+            </h2>
+
+            <p class="section-description">
+                Be part of the celebration and express
+                the Christmas spirit through creativity.
+            </p>
+
+
+            <div class="competition-grid">
+
+
+                <!-- PAINTING COMPETITION -->
+
+                <div class="competition-card">
+
+                    <div class="competition-card-top">
+
+                        <div class="competition-symbol">🎨</div>
+
+                        <h3>Children's Painting Competition</h3>
+
+                        <p>
+                            Theme: Christmas Through My Eyes
+                        </p>
+
+                    </div>
+
+                    <div class="competition-card-body">
+
+                        <p>
+                            An opportunity for young artists
+                            to bring their imagination to life
+                            through colours and creativity.
+                        </p>
+
+                        <span class="competition-age">
+                            AGE: 5 – 18 YEARS
+                        </span>
+
+                        <p style="margin-top:18px;">
+                            <strong>Three Categories</strong><br>
+                            Category A: 5–8 Years<br>
+                            Category B: 9–13 Years<br>
+                            Category C: 14–18 Years
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NATIVITY COMPETITION -->
+
+                <div class="competition-card">
+
+                    <div class="competition-card-top nativity">
+
+                        <div class="competition-symbol">🌟</div>
+
+                        <h3>Nativity Scene Competition</h3>
+
+                        <p>
+                            Celebrate the story of Christmas.
+                        </p>
+
+                    </div>
+
+                    <div class="competition-card-body">
+
+                        <p>
+                            Create a beautiful representation
+                            of the birth of Jesus Christ and
+                            share the message of hope, peace
+                            and love.
+                        </p>
+
+                        <span class="competition-age">
+                            NO AGE LIMIT
+                        </span>
+
+                        <p style="margin-top:18px;">
+                            Open to individuals, families,
+                            churches, institutions and teams.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="competition-register">
+
+                <a href="https://forms.gle/uR71Umjrd9oyrWHx6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-primary-custom">
+
+                    REGISTER FOR COMPETITIONS ↗
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact" class="section">
+
+        <div class="section-inner">
+
+            <div class="section-label">
+                GET IN TOUCH
+            </div>
+
+            <h2 class="section-title">
+                We'd love to hear from you.
+            </h2>
+
+            <p class="section-description">
+                For more details about the Manaveeyam
+                Christmas Cultural Collective 2026,
+                please contact the organising team.
+            </p>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-card">
+
+                    <h3>Chev Dr Koshy M George</h3>
+
+                    <a href="tel:9496040085">
+                        94960 40085
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>Sanal</h3>
+
+                    <a href="tel:9447011389">
+                        94470 11389
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>Rev Azariah Joseph</h3>
+
+                    <a href="tel:9447271005">
+                        94472 71005
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>Jerin</h3>
+
+                    <a href="tel:7558861999">
+                        75588 61999
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="contact-location">
+
+                <strong>MANAVEEYAM VEEDHI</strong>
+
+                <br>
+
+                Thiruvananthapuram, Kerala
+
+                <br><br>
+
+                21 – 24 December 2026
+
+                <br>
+
+                6:30 PM – 9:30 PM
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 <strong>Manaveeyam Christmas Cultural Collective.</strong>
+            All rights reserved.
+        </p>
+
+        <p style="margin-top:10px;">
+            Presented at Manaveeyam Veedhi, Thiruvananthapuram.
+        </p>
+
+        <p style="margin-top:10px;">
+            Powered by Pleroma – The Legacy of Light
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
